@@ -3,10 +3,12 @@
 namespace Aprendiz.ModelView
 {
     using Aprendiz.Model;
+    using Aprendiz.Model.Services;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Text;
+    using System.Threading.Tasks;
     using Xamarin.Forms;
 
     public class AprendizPageViewModel:Notificable
@@ -54,9 +56,21 @@ namespace Aprendiz.ModelView
 
         public AprendizPageViewModel()
         {
-            Aprendices
+            Aprendices = new ObservableCollection<Aprendiz>();
+            CargarAprendizCommand = new Command((obj)=>CargarAprendices());
         }
 
+        private async void CargarAprendices()
+        {
+            if (!IsEnable)
+            {
+                isEnable = true;
+                await Task.Delay(3000);
+                Data listAprendices = CaracterizacionAprendices.CargarAprendiz();
+                Aprendices = listAprendices.Aprendices;
+                IsEnable = false;
+            }
+        }
         #endregion
 
     }
