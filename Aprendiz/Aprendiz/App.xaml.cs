@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Aprendiz.View;
+
 
 using Xamarin.Forms;
 
@@ -13,7 +11,7 @@ namespace Aprendiz
 		{
 			InitializeComponent();
 
-			MainPage = new Aprendiz.MainPage();
+			MainPage = new NavigationPage(new AprendizPage());
 		}
 
 		protected override void OnStart ()
