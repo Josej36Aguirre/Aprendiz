@@ -13,7 +13,7 @@
         <Button Text="Caracterización Aprendices"
                 BackgroundColor="Navy"
                 TextColor="White"
-                Command="{Binding CargaAprendizCommand}"/>
+                Command="{Binding CargarAprendizCommand}"/>
         <ActivityIndicator IsRunning="{Binding IsEnabled}"
                            IsVisible="{Binding IsEnabled}"/>
         <ListView ItemsSource="{Binding Aprendices}"
