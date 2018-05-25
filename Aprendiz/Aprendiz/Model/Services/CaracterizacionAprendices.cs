@@ -5,7 +5,7 @@ namespace Aprendiz.Model.Services
 {
     using System;
     using System.Collections.ObjectModel;
-    class CaracterizacionAprendices
+  public  class CaracterizacionAprendices
     {
 
         #region Método
@@ -15,7 +15,7 @@ namespace Aprendiz.Model.Services
             Data carAprendices = new Data();
 
             string[] nombres = {"Oscar","Elkin","Francisco","Victor Manuel",
-                "Alejandro", "Diana", "OLiverio", "Mauriciio", "Jesús"};
+                "Alejandro", "Diana", "OLiverio", "Mauricio", "Jesús"};
             string[] apellidos = {"Cárdenas", "Ortua", "Martinez", "López",
             "Gonzáles"};
             string[] programas = {"Contabilidad y Finanzas", "Produccion Multimedia",

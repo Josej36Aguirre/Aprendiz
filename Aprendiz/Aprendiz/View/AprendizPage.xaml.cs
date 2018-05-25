@@ -19,7 +19,7 @@ namespace Aprendiz.View
 		public AprendizPage ()
 		{
 			InitializeComponent ();
-            this.BindingContext = new ApredizViewModel();
+            this.BindingContext = new AprendizPageViewModel();
             lstName.ItemSelected += LstName_ItemSelected; 
 		}
 

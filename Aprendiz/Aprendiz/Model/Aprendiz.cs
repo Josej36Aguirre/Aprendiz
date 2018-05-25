@@ -8,9 +8,7 @@ namespace Aprendiz.Model
     {
         #region Atributos
         private String nombre;
-
         private String apellido;
-
         private String programa;
         private double ficha;
         private double promedio; 

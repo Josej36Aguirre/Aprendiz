@@ -10,6 +10,7 @@ namespace Aprendiz.Converters
 
     public class PromedioColorConverter : IValueConverter
     {
+        #region Interfaces
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var promedio = (double)value;
@@ -20,5 +21,6 @@ namespace Aprendiz.Converters
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

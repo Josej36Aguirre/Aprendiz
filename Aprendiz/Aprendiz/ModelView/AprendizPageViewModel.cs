@@ -3,13 +3,13 @@
 namespace Aprendiz.ModelView
 {
     using Aprendiz.Model;
-    using Aprendiz.Model.Services;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Text;
     using System.Threading.Tasks;
     using Xamarin.Forms;
+    using Model.Services;
 
     public class AprendizPageViewModel:Notificable
     {
@@ -46,13 +46,7 @@ namespace Aprendiz.ModelView
                 OnPropertyChanged();
             }
         }
-        private Command cargarAprendizCommand;
-
-        public Command CargarAprendizCommand
-        {
-            get { return cargarAprendizCommand; }
-            set { cargarAprendizCommand = value; }
-        }
+        public Command CargarAprendizCommand { get; set; }
 
         public AprendizPageViewModel()
         {
