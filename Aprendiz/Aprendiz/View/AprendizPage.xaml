@@ -5,7 +5,7 @@
              x:Class="Aprendiz.View.AprendizPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:PromedioColorConverter x:Key="PromConverter"/>
+            <local:PromedioColorConverter x:Key="promConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -17,7 +17,7 @@
                            IsVisible="{Binding IsEnabled}"/>
         <ListView ItemsSource="{Binding Aprendices}"
                   HasUnevenRows="True"
-                  x:Name="lsName">
+                  x:Name="lstName">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
