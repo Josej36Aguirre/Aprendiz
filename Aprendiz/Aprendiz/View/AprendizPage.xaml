@@ -11,7 +11,8 @@
 
     <StackLayout Margin="10">
         <Button Text="Caracterización Aprendices"
-                BackgroundColor="White"
+                BackgroundColor="Navy"
+                TextColor="White"
                 Command="{Binding CargaAprendizCommand}"/>
         <ActivityIndicator IsRunning="{Binding IsEnabled}"
                            IsVisible="{Binding IsEnabled}"/>
